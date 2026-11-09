@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+# never commit credentials
+.config/
+cookies.json
+session.json
+*.mp3

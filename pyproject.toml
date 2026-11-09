@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plaud4"
+version = "0.1.0"
+description = "Unofficial client for the Plaud 4.0 web API: upload recordings, keep the session alive"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Fatih Durmaz" }]
+keywords = ["plaud", "transcription", "meeting", "recording"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+plaud4 = "plaud4.cli:main"
+
+[tool.setuptools]
+packages = ["plaud4"]
